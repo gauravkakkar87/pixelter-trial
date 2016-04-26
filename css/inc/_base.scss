@@ -1,0 +1,181 @@
+/* -----------------------------------------
+	01. General
+----------------------------------------- */
+
+/* Basic Typography
+=================================== */
+body {
+	background-repeat: no-repeat;
+	background-position: top center;
+	line-height: 1.625;
+	font-size: 16px;
+	color: $text-color;
+	font-family: $primary-font;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: normal;
+	font-weight: 900;
+	margin: 0 0 30px 0;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+p {
+	margin: 0 0 30px 0;
+}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	outline: none;
+	color: $primary-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		outline: none;
+		text-decoration: none;
+	}
+
+	&:active {
+		outline: none;
+	}
+}
+
+.group {
+	@include clearfix();
+}
+
+/* General Element Styling
+=================================== */
+
+/* Reset figure margin from normalize.css */
+figure {
+	margin: 0;
+}
+
+/* Lists */
+ul, ol {
+	padding-left: 20px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul,ol { margin:0; padding:0; list-style: none; }
+
+dl {
+	margin: 0 0 20px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 15px;
+}
+
+/* Blockquotes */
+blockquote {
+	margin: 20px 0;
+	padding-left: 15px;
+	border-left: 3px solid #ccc;
+	font-size: 17px;
+	font-weight: 300;
+
+	cite {
+		display: block;
+		font-weight: bold;
+		font-style: italic;
+		margin: 10px 0 0;
+		font-size: 14px
+	}
+}
+
+/* Tables */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
+}
+
+/* Code */
+code, kbd, tt, var, samp, pre {
+	font-family: monospace, serif;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	font-style: normal;
+}
+
+pre {
+	padding: 15px;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Various */
+address {
+	margin: 0 0 15px;
+}
+
+.sr-only,
+.screen-reader-text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+/* Embeds and iframes
+=================================== */
+
+embed,
+iframe,
+object,
+video,
+audio {
+	margin-bottom: 15px;
+	max-width: 100%;
+}
+
+p > embed,
+p > iframe,
+p > object,
+p > audio,
+span > embed,
+span > iframe,
+span > object,
+span > audio {
+	margin-bottom: 0;
+}
+
+#map,
+.map * {
+	max-width: none !important;
+}

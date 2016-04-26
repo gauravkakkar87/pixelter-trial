@@ -1,0 +1,38 @@
+/* -----------------------------------------
+	03. Header
+----------------------------------------- */
+.site-header {
+    .container {
+        padding: 15px;
+    }    
+    .brand {
+        position: relative;
+        h1 {
+            margin: 0;
+            float: left;
+            a {
+                display: block;
+                width: 155px;
+                height: 50px;
+                background: url("../images/blog-logo@2x.png") no-repeat left center transparent;
+                background-size: 100% auto;
+                text-indent: -9999px;
+            }
+        }
+    }
+    #nav-toggle {
+        width: 45px;
+        height: 45px;
+        text-indent: -9999px;
+        border: 1px solid #E8E8E8;
+        background: url("../images/menu@2x.png") no-repeat center center #fff;
+        background-size: 20px 20px;
+        position: absolute;
+        left: 15px;
+        top: 0px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        display: none;
+    }    
+}

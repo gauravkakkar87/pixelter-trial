@@ -1,0 +1,46 @@
+/* -----------------------------------------
+	04. Modules
+----------------------------------------- */
+
+/* Modules:Global
+================================================== */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.section-title {
+    padding: 35px 15px 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 33px;
+}
+
+/* MODULE: #Product Listings
+================================================== */
+.product-listings { 
+    color: #000;
+    .product {    
+        margin-bottom: 40px;
+        .product-info {
+            border:1px solid #F3F3F3;
+            .product-title {
+                color: #DC1515;
+                font-weight: 400;
+                font-size: 20px;
+                margin-bottom: 10px;              
+            }
+            .price {
+                color: #CECECE;
+                font-size: 18px;
+            }
+            .product-link {
+                display: block;
+                padding: 30px;
+            }
+        }
+    }
+}

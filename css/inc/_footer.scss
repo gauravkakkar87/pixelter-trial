@@ -1,0 +1,16 @@
+/* -----------------------------------------
+	05. Footer
+----------------------------------------- */
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    .copyright {
+        padding: 15px;
+        p {
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+    }
+}
