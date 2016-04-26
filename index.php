@@ -69,9 +69,9 @@
               <div class="row">
                   <h2 class="section-title">Products</h2>
                   <?php  
-                    $index = 0;
-                    foreach ($products as $index => $product) { 
-                    // looping through products ?>
+                    // looping through products
+                    foreach ($products as $index => $product) {
+                  ?>
                   
                     <article class="col-sm-4 col-xs-12 product"  itemscope itemtype="http://schema.org/Product">
                         <div class="product-info">
